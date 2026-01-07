@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "name": "Note Summarizer",
+  "description": "A specialized assistant for summarizing notes, extracting key points, and listing action items.",
+  "url": "http://127.0.0.1:2025/a2a/NOTE_SUMMARIZER_AGENT_ID",
+  "wallet_connection_string": "pl_conn_live_7gv0suMq2xq9gCuvGasxpA",
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain"],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": true
+  },
+  "skills": [
+    {
+      "id": "summarize_text",
+      "name": "Summarize Text",
+      "description": "Summarize raw notes into a concise, clear summary. Can adapt to requested styles like bullets, paragraph, or executive summary.",
+      "tags": ["notes", "summary", "compression", "documentation"],
+      "examples": [
+        "Summarize these meeting notes into bullet points",
+        "Create an executive summary from this long note",
+        "Turn this messy scratchpad into a clean summary"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain"]
+    },
+    {
+      "id": "extract_action_items",
+      "name": "Extract Action Items",
+      "description": "Extract clear, actionable tasks and next steps from notes or meeting transcripts.",
+      "tags": ["notes", "tasks", "actions", "productivity"],
+      "examples": [
+        "List all action items from these meeting notes",
+        "What are the next steps and owners from this discussion?",
+        "Turn this transcript into a checklist of tasks"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain", "application/json"]
+    }
+  ],
+  "supportsAuthenticatedExtendedCard": true
+}
+
+

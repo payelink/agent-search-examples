@@ -1,0 +1,30 @@
+{
+  "name": "Currency Converter",
+  "description": "A specialized assistant for currency conversions and exchange rate queries.",
+  "version": "1.0.0",
+  "url": "http://127.0.0.1:2024/a2a/b580dd2a-cf21-5802-a9b8-ce4563c98060",
+  "wallet_connection_string": "pl_conn_live_N7-W3MPWKRsCglomv92qfw",
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain"],
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false
+  },
+  "skills": [
+    {
+      "id": "get_exchange_rate",
+      "name": "Get Exchange Rate",
+      "description": "Get the current or historical exchange rate for a given currency pair. Supports any currency pair and can retrieve rates for specific dates or the latest available rate.",
+      "tags": ["currency", "exchange-rate", "conversion", "forex", "finance"],
+      "examples": [
+        "What's the exchange rate from USD to EUR?",
+        "Get the current exchange rate for GBP to JPY",
+        "What was the USD to CAD exchange rate on 2024-01-15?",
+        "Convert 100 USD to EUR"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain", "application/json"]
+    }
+  ],
+  "supportsAuthenticatedExtendedCard": true
+}

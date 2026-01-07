@@ -1,0 +1,47 @@
+{
+  "name": "Budget Planner",
+  "description": "Helps users plan monthly budgets, categorize expenses, and set savings goals.",
+  "version": "1.0.0",
+  "url": "http://127.0.0.1:2024/a2a/budget-planner",
+  "wallet_connection_string": "pl_conn_live_N7-W3MPWKRsCglomv92qfw",
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain"],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "skills": [
+    {
+      "id": "plan_budget",
+      "name": "Plan Budget",
+      "description": "Given monthly income and expenses, suggest a simple allocation for savings, fixed, and variable expenses.",
+      "tags": ["budget", "personal-finance", "planning", "savings"],
+      "examples": [
+        "Help me plan a budget with 4000 income, 1800 rent and bills, 800 other expenses.",
+        "Suggest how much I should save each month if I earn 2500.",
+        "I want to save 20% of my income, how should I split the rest between fixed and variable expenses?"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain", "application/json"]
+    },
+    {
+      "id": "summarize_expenses",
+      "name": "Summarize Expenses",
+      "description": "Summarize and categorize a list of expenses into totals and categories.",
+      "tags": ["expenses", "analytics", "budget"],
+      "examples": [
+        "Here are my expenses for the month, summarize them by category.",
+        "Tell me how much I spent on food, transport, and entertainment."
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain", "application/json"]
+    }
+  ],
+  "supportsAuthenticatedExtendedCard": true
+}
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "name": "Meeting Scheduler",
+  "description": "A specialized assistant for scheduling meetings.",
+  "url": "http://127.0.0.1:2025/a2a/b580dd2a-cf21-5802-a9b8-ce4563c98060",
+  "wallet_connection_string": "pl_conn_live_7gv0suMq2xq9gCuvGasxpA",
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain"],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "skills": [
+    {
+      "id": "schedule_meeting",
+      "name": "Schedule Meeting",
+      "description": "Schedule meetings with specified title, date, time, duration, participants, and location. Returns meeting confirmation with meeting ID.",
+      "tags": ["meeting", "scheduling", "calendar", "appointment"],
+      "examples": [
+        "Schedule a meeting for tomorrow at 2pm",
+        "Book a meeting with the team next Monday at 10am",
+        "Schedule a 30-minute meeting on 2024-12-25 at 14:00"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain", "application/json"]
+    }
+  ],
+  "supportsAuthenticatedExtendedCard": true
+}

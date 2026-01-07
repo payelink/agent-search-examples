@@ -1,0 +1,12 @@
+{
+  "graphs": {
+    "meeting_scheduler": "src/meeting_scheduler/agent.py:agent",
+    "note_summarizer": "src/note_summarizer/agent.py:agent"
+  },
+  "dependencies": ["."],
+  "env": "./.env",
+  "python_version": "3.13",
+  "http": {
+    "app": "api/app.py:app"
+  }
+}
