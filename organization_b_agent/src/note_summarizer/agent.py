@@ -7,7 +7,7 @@ from pydantic import BaseModel
 from typing import Literal
 
 
-llm = init_chat_model(model="gpt-4o-mini", temperature=0.0)
+llm = init_chat_model(model="claude-haiku-4-5-20251001", temperature=0.0)
 
 
 class ResponseFormat(BaseModel):

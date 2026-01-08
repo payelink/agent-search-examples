@@ -1,0 +1,9 @@
+{
+    "graphs": {
+      "james_agent": "src/agent.py:agent"
+    },
+    "dependencies": ["."],
+    "env": "./.env",
+    "python_version": "3.13"
+  }
+  

@@ -8,7 +8,7 @@ from src.budget_planner.tool import plan_budget, summarize_expenses
 from src.budget_planner.prompt import AGENT_B_PROMPT
 
 
-llm = init_chat_model(model="gpt-4o-mini", temperature=0.0)
+llm = init_chat_model(model="claude-haiku-4-5-20251001", temperature=0.0)
 
 
 class ResponseFormat(BaseModel):
